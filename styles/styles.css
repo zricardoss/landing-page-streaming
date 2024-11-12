@@ -1,0 +1,263 @@
+* {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: #06090F;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.menu-navegacao {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #00A3FF;
+    font-size: 2.5em;
+    font-family: "Inter Tight", sans-serif;
+}
+
+.logo > a:visited {
+    color: #00A3FF;
+}
+
+ul {
+    display: flex;
+    gap: 3em;
+}
+
+.navegacao {
+    color: #FFFFFF;
+}
+
+.navegacao > a:visited {
+    color: #FFFFFF;
+}
+
+li {
+    font-family: "Rubik", serif;
+    font-size: 1.1em;
+}
+
+.busca {
+    width: 7.5em;
+    font-size: 1em;
+    border: 1px solid #151B26;
+    border-radius: 0.5em;
+    background-color: #151B26;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    opacity: 1; 
+}
+
+.section01 {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.5em;
+    padding: 1em;;
+    margin-top: 1em;
+}
+
+.section01::-webkit-scrollbar {
+    height: 0.25em; 
+}
+
+.section01::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.section01::-webkit-scrollbar-thumb {
+    background-color: #00A3FF; 
+    border-radius: 10px; 
+    border: 2px solid transparent; 
+}
+
+.section01::-webkit-scrollbar-button {
+    display: none; /* Remove os botões padrões */
+}
+
+.az-menu button {
+    width: 6.3em;
+    height: 2.5em;
+    font-size: 1em;
+    margin-left: 1em;
+    border: 1px solid #151B26;
+    border-radius: 1em; 
+    background-color: #06090F;
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.az-menu button:first-child {
+    margin-left: 0; 
+}
+
+.az-menu button:hover {
+    background-color: #151B26; 
+}
+
+.section02 {
+    margin-top: 3em;
+    font-family: "Inter Tight", sans-serif;
+    color: #FFFFFF;
+}
+
+.imagem-cont {
+    position: relative;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.imagem-cont img {
+    width: 100%;  
+    height: auto;
+    border-radius: 1em;
+}
+
+.texto-sobreimagem {
+    position: absolute;
+    top: 55%;  
+    left: 35%; 
+    transform: translate(-50%, -50%);  /* Centraliza o texto no centro exato */
+    color: white; /* Cor do texto */
+    font-size: 1.5em; /* Tamanho da fonte */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 1.25em;
+    margin: 1.25em;
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo para o rodapé */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo do texto do rodapé */
+.footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer span {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.button-vermais {
+    display: flex;
+    justify-content: center;
+}
+
+.section03 button {
+    width: 12.3em;
+    height: 2.5em;
+    font-size: 1em;
+    margin-left: 1em;
+    border: 1px solid #151B26;
+    background-color: #06090F;
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.section03 button:hover {
+    background-color: #151B26; 
+}
+
+.image2-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 1.25em;
+    margin: 1.25em;
+}
+
+.image2-item {
+    position: relative;
+    overflow: hidden; 
+}
+
+.image2-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo para o rodapé */
+.footer2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo do texto do rodapé */
+.footer2 p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer2 span {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    color: #BFBFBF;
+}
